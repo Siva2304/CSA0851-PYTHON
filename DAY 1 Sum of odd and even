@@ -1,0 +1,23 @@
+def sumsquare(lst):
+    odd = []
+    even = []
+    l3=[]
+    for j in range(0,len(lst)):
+        if(lst[j]%2==0):
+            even.append(lst[j])
+        else:
+            odd.append(lst[j])
+    print("even numbers",even)
+    print("odd numbers", odd)
+    res = sum(map(lambda i: i * i, odd))
+    res1 = sum(map(lambda j: j * j, even))
+    print("sum of square odd:",res)
+    print("sum of square even:",res1)
+
+lst = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele)
+print(lst)
+sumsquare(lst)
