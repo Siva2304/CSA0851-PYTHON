@@ -1,0 +1,19 @@
+def happynumber(n):
+    temp=n
+    sum=0
+    while (temp > 0):
+        d = temp % 10
+        sum += d ** 2
+        temp //= 10
+    return sum
+
+
+
+num=int(input("enter the number:"))
+result=num
+while result!=1 and result!=4:
+    result=(happynumber(result))
+if result==1:
+    print("HAPPY NUMBER")
+elif result==4:
+    print("NOT HAPPY NUMBER")
