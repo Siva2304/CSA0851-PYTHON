@@ -1,0 +1,9 @@
+str2=input("enter second sentence:")
+str3=str1.split(" ")
+str4=str2.split(" ")
+for i in str3:
+    if i in str4:
+        str3.remove(i)
+        str4.remove(i)
+print(*str3)
+print(*str4)
