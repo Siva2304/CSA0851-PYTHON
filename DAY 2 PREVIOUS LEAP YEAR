@@ -1,0 +1,17 @@
+try:
+    n = int(input("Enter the year: "))
+    if(n>0):
+        if (n % 4 == 0):
+            print(n,"leap year")
+        elif (n % 100 == 0):
+            print(n,"leap year")
+        elif (n % 400 == 0):
+            print(n,"leap year")
+        else:
+            print(n,"not a leap year")
+    else:
+        print("enter valid year")
+    year=n%4
+    print("pre year",n-year)
+except ValueError:
+    print("Enter valid year")
