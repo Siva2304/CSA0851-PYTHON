@@ -1,9 +1,15 @@
+def removecommonwords(sent1,sent2):
+    com=[]
+    s1 = list(sent1.split())
+    s2 = list(sent2.split())
+    for i in s1:
+        if i in s2:
+            s1.remove(i)
+            s2.remove(i)
+    print(*s1)
+    print(*s2)
+str1=input("enter the sentence:")
 str2=input("enter second sentence:")
-str3=str1.split(" ")
-str4=str2.split(" ")
-for i in str3:
-    if i in str4:
-        str3.remove(i)
-        str4.remove(i)
-print(*str3)
-print(*str4)
+removecommonwords(str1,str2)
+
+
