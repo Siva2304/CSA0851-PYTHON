@@ -1,0 +1,4 @@
+b1=input("Enter the binary number")
+b2=input("Enter the another binary number")
+sum = bin(int(b1,2) + int(b2,2))
+print(sum[2:])
